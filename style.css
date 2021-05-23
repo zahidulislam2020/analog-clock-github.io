@@ -180,3 +180,9 @@ img.logo {
   box-shadow: inset 0px 11px 8px -200px rgba(128, 0, 0, 0), 
   inset 0px -24px 1px -10px rgba(226, 191, 191, 0.5);
 }
+
+.play-pause {
+	width: 35px;
+	border-radius: 3px;
+}
+	
