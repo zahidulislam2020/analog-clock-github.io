@@ -1,149 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 h1 {
-    text-align: center;
-    margin: 10px 0;
-    color: teal;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
-    padding-bottom: 10px;
-	font-size: clamp(10px, 10vw, 30px);
-	min-width: 500px;
+  text-align: center;
+  margin: 10px 0;
+  color: teal;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+  padding-bottom: 10px;
+  font-size: clamp(10px, 10vw, 30px);
+  min-width: 500px;
 }
 
 /*/////// Clock Frame setup /////////*/
 
 .container {
-    width: 500px;
-    /* height: 90vh; */
-    margin: 50px auto 0;
+  width: 500px;
+  /* height: 90vh; */
+  margin: 50px auto 0;
 }
 
 .clcok-holder {
-    width: 90%;
-    margin: 0 auto;
-    position: relative;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
 }
 
 .clcok-holder::after {
-    content: '';
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 1);
-    position: absolute;
-    top: 49.5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 50;
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 49.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 50;
 }
 
 img.clock-frame {
-    width: 100%;
+  width: 100%;
 }
 
 img.logo {
-    width:8%;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -100;
+  width: 8%;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -100;
 }
 
 .logo-text {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: rgb(168, 168, 168);
-    font-weight: bold;
-    font-style: italic;
-    font-size: 12px;
-    text-shadow: 0 1px 0 rgb(75, 75, 75);
-    z-index: -50;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(168, 168, 168);
+  font-weight: bold;
+  font-style: italic;
+  font-size: 12px;
+  text-shadow: 0 1px 0 rgb(75, 75, 75);
+  z-index: -50;
 }
 
 .clock-frame-border {
-    width: 107.5%;
-    height: 105.5%;
-    border-radius: 50%;
-    position: absolute;
-    top: -3.5%;
-    left: -4%;
-    z-index: -500;
-    background:  repeating-radial-gradient(
-        circle at 0 0, 
-        #eee,
-        #ccc 50px
-      );
-      box-shadow: 2px 2px 10px 2px gray;
+  width: 107.5%;
+  height: 105.5%;
+  border-radius: 50%;
+  position: absolute;
+  top: -3.5%;
+  left: -4%;
+  z-index: -500;
+  background: repeating-radial-gradient(circle at 0 0, #eee, #ccc 50px);
+  box-shadow: 2px 2px 10px 2px gray;
 }
 
 .clock-frame-border1 {
-    width: 100%;
-    height: 98.5%;
-    border-radius: 50%;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    z-index: -400;
+  width: 100%;
+  height: 98.5%;
+  border-radius: 50%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  z-index: -400;
 }
 
 /*/////// Second Tic setup /////////*/
 
 .sec {
-    width: 55%;
-    height: 2px;
-    background-color: orangered;
-    position: absolute;
-    top: 49%;
-    left: 36%;
-    transform-origin: 25% 50%;
-    z-index: 45;
-    box-shadow: -2px -2px 5px 1px gray;
+  width: 55%;
+  height: 2px;
+  background-color: orangered;
+  position: absolute;
+  top: 49%;
+  left: 36%;
+  transform-origin: 25% 50%;
+  z-index: 45;
+  box-shadow: -2px -2px 5px 1px gray;
 }
 
 .sec::before {
-    content: '';
-    width: 30px;
-    height: 3px;
-    /* border-radius: 50%; */
-    background-color: orangered;
-    border: 1px solid rgba(0, 128, 128, 0.2);
-    position: absolute;
-    top: 50%;
-    left: 0%;
-    transform: translate(-50%, -50%);
+  content: "";
+  width: 30px;
+  height: 3px;
+  /* border-radius: 50%; */
+  background-color: orangered;
+  border: 1px solid rgba(0, 128, 128, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
 }
 
 .min {
-    width: 33%;
-    height: 5px;
-    background-color: #000;
-    position: absolute;
-    top: 48.8%;
-    left: 50%;
-    transform-origin: 0;
-    z-index: -30;
-    border-radius: 10px;
-    box-shadow: -2px -2px 5px 1px gray;
+  width: 33%;
+  height: 5px;
+  background-color: #000;
+  position: absolute;
+  top: 48.8%;
+  left: 50%;
+  transform-origin: 0;
+  z-index: -30;
+  border-radius: 10px;
+  box-shadow: -2px -2px 5px 1px gray;
 }
 
 .hr {
-    width: 25%;
-    height: 10px;
-    background-color: #000;
-    position: absolute;
-    top: 48.5%;
-    left: 50%;
-    transform-origin: 0;
-    z-index: -40;
-    border-radius: 10px;
-    box-shadow: -2px -2px 5px 1px gray;
+  width: 25%;
+  height: 10px;
+  background-color: #000;
+  position: absolute;
+  top: 48.5%;
+  left: 50%;
+  transform-origin: 0;
+  z-index: -40;
+  border-radius: 10px;
+  box-shadow: -2px -2px 5px 1px gray;
+}
+
+.play-pause {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.date,
+.day {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Changa", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 3px;
+  width: 40px;
+}
+
+.date {
+  left: 70%;
+  background-color: rgb(87, 87, 87);
+  color: #ccc;
+  box-shadow: inset 0px 11px 8px -200px rgba(204, 204, 204, 0), 
+  inset 0px -24px 1px -10px rgba(197, 197, 197, 0.5);
+}
+
+.day {
+  left: 78%;
+  background-color: maroon;
+  color: #ccc;
+  box-shadow: inset 0px 11px 8px -200px rgba(128, 0, 0, 0), 
+  inset 0px -24px 1px -10px rgba(226, 191, 191, 0.5);
 }
