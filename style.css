@@ -162,6 +162,7 @@ img.logo {
   text-align: center;
   border-radius: 3px;
   width: 40px;
+  z-index: -45;
 }
 
 .date {
